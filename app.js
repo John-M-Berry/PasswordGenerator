@@ -93,7 +93,7 @@ function generatePassword(upper, lower, number, symbol, length) {
 
   // 3. Loop over the length and call the generator function for each checked type
   // Building password with a for loop
-  for (i = 0; i < 1; i += typesCount) {
+  for (i = 0; i < length; i += typesCount) {
     typesArr.forEach(type => {
       const funcName = type[0];
       console.log(funcName);
